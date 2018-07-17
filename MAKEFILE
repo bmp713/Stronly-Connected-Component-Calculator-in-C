@@ -1,0 +1,23 @@
+# <Brandon Piper> 
+#
+# make - 
+# make - 
+# make clean - removes all object files
+# make spotless - removes all executables 
+# make clear - makes clean and spotless
+# make all - makes both executables and all object files
+
+findSCC : findSCC.o sccADT.o
+	gcc -o findSCC findSCC.o sccADT.o
+findSCC.o :
+	gcc -c -Wall findSCC.c sccADT.c
+sccADT.o : 
+	gcc -c -Wall sccADT.c
+all:
+	make findSCC
+spotless:
+	rm findSCC
+clean:
+	rm *.o
+clear: 
+	make clean spotless

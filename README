@@ -1,0 +1,18 @@
+Name    : Brandon Piper
+
+Program finds the strongly connected components of any graph passed
+in as a file containing the edges. 
+
+INSTRUCTIONS:
+To run program type the following: 
+> make all
+> FindSCC inputFile
+
+Prints the adjacencylist for the graph and the strongly connected 
+components in the order that they are traversed in the algorithm. 
+
+ALGORITHMS:
+Depth First Search Recursion
+
+Input character parsing algorithm
+
